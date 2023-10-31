@@ -4,6 +4,7 @@
 - Fork the repository
 - Clone the repository using `git clone`
 - Make your changes
+- step 1 `git add .`
 - Commit and push your changes using `git commit -m "<your-commit-message>"` and `git push`
 - Create a pull request in github  
 
