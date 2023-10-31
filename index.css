@@ -3,7 +3,7 @@ body {
 }
 
 .bgc{
-    background-color:red;
+    background-color:#0B3341;
 }
 body::-webkit-scrollbar {
     width: 0px; /* Adjust the width as needed */
