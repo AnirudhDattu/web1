@@ -9,6 +9,7 @@
 - Create a pull request in github  
 
 ## Update your local repo befor you commit changes
+- Sync your fork befor first in git hub
 - `git pull` to update your repo
 - to find the status of the repo `git status`
  
