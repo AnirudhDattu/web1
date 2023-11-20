@@ -121,7 +121,6 @@ hr{
 }
 
 .genr{
-    position: relative;
     width: 500px;
     height: 87px;
     margin-left: 38%;
@@ -163,22 +162,22 @@ hr{
 
 }
 
-
 .bookimg {
     width: 40%;
     height: 80%;
     position: absolute;
-    margin-bottom: 200px;
-    left: 225px;
+    margin-bottom: 0%;
+    left: 46%;
     z-index: 1;
     box-shadow: 5px 5px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 .bookimg1{
     width: 40%;
     height: 80%;
     position: absolute;
-    margin-bottom: 200px;
-    left: 30px;
+    margin-bottom: 0%;
+    left: 7%;
     z-index: 1;
     box-shadow: 5px 5px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -199,7 +198,7 @@ hr{
 }
 .booktype2{
     position: relative;
-    left: 250px;
+    left: 58%;
     top: 38%;
     font-family: 'Forum';
     font-style: normal;
@@ -211,12 +210,34 @@ hr{
     background-clip: content-box; /* This property removes the opacity from the text */
     z-index: 0;
 }
+.rectangle2 {
+    margin-top: 80px;
+    margin-bottom: 40px; 
+    box-sizing: border-box;
+    width: 5%;
+    height:250px;
+    opacity: 0.5;
+    border-style: solid;
+    border: 5px solid #C19162;
+    box-shadow: inset 0px 4px 20px rgba(0, 0, 0, 0.25);
+    
+
+}
 .author1{
-    position: relative;
-    left 
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    margin-bottom: 0%;
+    left: 7%;
+    z-index: 1;
 }
 
-
+@media screen and (max-width: 600px)
+{
+    genr{
+        margin-left: 1px;
+    }
+}
 
 
 
