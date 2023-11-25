@@ -124,7 +124,24 @@ hr{
     position: absolute;
     width: 100%;
     margin-left: 0%;
-    margin-top: 95%;
-  
+    margin-top: 98%;
+}
+
+.text{
+    position: absolute;
+left: 10%;
+top: 14%;
+width: 19%;
+font-family: 'Playfair Display';
+font-style: normal;
+font-weight: 400;
+font-size: 60px;
+line-height: 50px;
+/* or 129% */
+
+color: #0B3341;
+
+transform: matrix(1, 0.01, -0.01, 1, 0, 0);
+
 }
 
