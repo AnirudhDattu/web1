@@ -1,0 +1,157 @@
+body {
+    margin: 0px;
+}
+
+.bgc{
+    background-color:#0B3341;
+    position: relative;
+}
+body::-webkit-scrollbar {
+    width: 0px; /* Adjust the width as needed */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: transparent; /* Make the thumb (draggable part) transparent */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: transparent; /* Make the track (the scrollbar's background) transparent */
+  }
+.containernav{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 20px;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+    gap: 20px; /* Adjust the gap between items */
+    margin-left: 25px;
+}
+
+/* this is the css for bookshemlimage */
+.titleimg{
+    width: 350px;
+    padding-top: 20px;
+    flex-direction: column;
+}
+
+/* css for navbar  */
+.navbar{
+    padding-top: 20px;
+    padding-left: 90px;
+}
+.titleimg{
+    width: 350px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    font-family: 'Open Sans';
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #C19162 ;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+    font-family: 'Open Sans';
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* colour of the breakline */
+
+hr{
+    height: 1px;
+    background-color: #C19162;
+    border: none;
+    margin: 0px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------ */
+
+.container {
+    position: relative;
+    margin-left: 0%;
+}
+.woodbgc{
+    z-index: 0; 
+    /* object-fit: cover; */
+    position: relative;
+    width: 288.87%;
+    margin-left: 11.2%;
+    margin-top: 25%;
+    margin-right: 5%;
+}
+.slb {
+    position: absolute;
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 35%;
+    z-index: 0;
+  
+}
+.slb2 {
+    position: absolute;
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 65%;
+  
+}
+.slb3 {
+    position: absolute;
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 98%;
+    z-index: 0;
+}
+
+.img1{
+    position: absolute;
+    width: 17%;
+    margin-left: 37%;
+    margin-top: 11%;
+    z-index: 1;
+}
+
+.text{
+    position: absolute;
+left: 10%;
+top: 14%;
+width: 19%;
+font-family: 'Playfair Display';
+font-style: normal;
+font-weight: 400;
+font-size: 60px;
+line-height: 50px;
+/* or 129% */
+
+color: #0B3341;
+
+transform: matrix(1, 0.01, -0.01, 1, 0, 0);
+
+}
+
