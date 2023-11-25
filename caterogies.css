@@ -93,37 +93,38 @@ hr{
 
 /* ------------------------------------------------------------------------------------------------------------------------ */
 
+.container {
+    position: relative;
+    margin-left: 0%;
+}
 .woodbgc{
-    border-radius: 30px;
     z-index: 0; 
-    object-fit: cover;
-    position: absolute;
-    width: 90%;
-    margin-left: 5%;
-    margin-top: 5%;
+    /* object-fit: cover; */
+    position: relative;
+    width: 288.87%;
+    margin-left: 11.2%;
+    margin-top: 25%;
     margin-right: 5%;
 }
 .slb {
     position: absolute;
-    width: 90%;
-    margin-left: 5%;
+    width: 100%;
+    margin-left: 0%;
     margin-top: 35%;
   
 }
 .slb2 {
     position: absolute;
-    width: 90%;
-    margin-left: 5%;
-    margin-top: 70%;
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 65%;
   
 }
 .slb3 {
     position: absolute;
-    width: 90%;
-    margin-left: 5%;
+    width: 100%;
+    margin-left: 0%;
     margin-top: 95%;
   
 }
-.container {
-    position: relative;
-}
+
