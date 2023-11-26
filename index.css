@@ -1,6 +1,5 @@
 body {
-    margin: 0;
-    padding: 0; 
+    margin: 0px;
 }
 
 .bgc{
@@ -24,21 +23,25 @@ body::-webkit-scrollbar {
 }
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust the number of columns as needed */
+    grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
     gap: 20px; /* Adjust the gap between items */
-    margin: 0 10px;
+    margin-left: 25px;
 }
 
 /* this is the css for bookshemlimage */
 .titleimg{
-    width: 100%;
+    width: 350px;
     padding-top: 20px;
-    max-width: 350px;
+    flex-direction: column;
 }
 
 /* css for navbar  */
 .navbar{
-    padding: 20px 10px;
+    padding-top: 20px;
+    padding-left: 90px;
+}
+.titleimg{
+    width: 350px;
 }
 
 nav{
@@ -51,7 +54,7 @@ nav{
 nav ul li {
     display: inline-block;
     list-style: none;
-    margin: 10px 10px;
+    margin: 10px 20px;
 }
 
 nav ul li a {
@@ -164,35 +167,46 @@ hr{
 }
 
 .genr{
-    width: 100%;
-    margin-left: 10px;
-    font-size: 30px;
+ position: relative;
+ width: 387px;
+ height: 87px;
+ margin-left: 40%;
+ font-family: 'Playfair Display';
+ font-style: normal;
+ font-weight: 400;
+ font-size: 50px;
+ line-height: 67px;
+ color: #C19162;
 }
 
 .item {
+    position: relative;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .rectangle {
     box-sizing: border-box;
     margin-top: 215px;
-    width: 100%;
+    width: 95%;
     height: 320px;
     background: rgba(193, 145, 98, 0.3);
     opacity: 0.5;
+    border-width: 1px 2px 2px 2px;
     border-style: solid;
-    border: 1px solid #C19162;
+    border-color: #C19162;
     box-shadow: inset 0px 4px 20px rgba(0, 0, 0, 0.25);
 }
 
 .bookimg {
-    width: 100%;
-    max-width: 230px;   
-    height: auto;
-    margin-top: 20px;
-    left: 0;
+    width: 230px;
+    height: 350px;
+    position: absolute;
+    margin-top: 170px;
+    left: 220px;
+    z-index: 1;
     box-shadow: 5px 5px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -355,10 +369,6 @@ filter: blur(10px);
     margin-top: 200px;
     margin-bottom: 350px
 }
-.author1{
-    margin-left: 20px;
-    margin-top: 100px;
-}
 /* --------------------------------------------------------------------------------------------------------------------------------------- */
 /* footer container  */
 
@@ -438,6 +448,5 @@ filter: blur(10px);
     border: none;
     cursor: pointer;
     width: 100%;
-    font-size: 16px;
-    border-radius: 5px;
+    fill: 60%;
 }
