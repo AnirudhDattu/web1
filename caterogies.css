@@ -136,6 +136,13 @@ hr{
     margin-top: 11%;
     z-index: 1;
 }
+.img2{
+    position: absolute;
+    width: 10%;
+    margin-left: 10%;
+    margin-top: 50%;
+    z-index: 1;
+}
 
 .text{
     position: absolute;
