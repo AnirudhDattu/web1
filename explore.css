@@ -139,7 +139,7 @@ hr{
    }
 
 .genr1{
-    font-family: Playfair Display;
+    font-family: 'Playfair Display';
     font-size: 35px;
     font-weight: 400;
     letter-spacing: 0.03em;
@@ -223,8 +223,9 @@ hr{
 
 .booktype1{
     position: relative;
-    left: 20px;
+    left: 19px;
     top: 38%;
+    
     font-family: 'Forum';
     font-style: normal;
     font-weight: 400;
@@ -238,7 +239,7 @@ hr{
 .booktype2{
     position: relative;
     top: 34%;
-    left: 58%;
+    left: 55%;
     word-wrap: break-word;
     display: inline-block;
     font-family: 'Forum';
@@ -380,7 +381,7 @@ hr{
 }
 
 .age1:hover,
-.age2:hover,
+
 .age3:hover,
 .age4:hover,
 .age5:hover,
