@@ -406,10 +406,13 @@ hr{
 
 .container1{
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as needed */
+    grid-template-columns: repeat(4, 0.5fr); /* Adjust the number of columns as needed */
     gap: 20px; /* Adjust the gap between items */
     margin-left: 25px;
-    width: 65%;
+    width: 60%;
+    margin-left: 4%;
+    margin-top: 5%;
+    margin-bottom: 15%;
 }
 
 .author1{
@@ -418,11 +421,38 @@ hr{
     display: flex;
     flex-direction: column;
     margin-top: 50px;
-    width: 90%;
+    width: 95%;
 }
 
 .author{
     display: inline-block;
+    position: absolute;
+    margin-top: 8%;
+    margin-left: 65%;
+
+}
+
+.showcase{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 93px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #C19162;
+    margin-bottom: 2px;
+}
+
+.showcase2{
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 150;
+    font-size: 18px;
+    line-height: 0px;
+    margin-top: 5px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
 }
 
 
