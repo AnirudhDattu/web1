@@ -532,3 +532,84 @@ margin-left: 25.3%
     margin-left: 87.6%;
 }
 
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+/* footer container  */
+
+.Fcontainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as needed */
+    gap: 20px; /* Adjust the gap between items */
+    margin-left: 25px;
+    margin-top: 50px;
+    
+}
+
+.footer{
+    background-color: #0B1214;
+}
+.Fcont1{
+    color: white;
+    font-family: 'Open Sans';
+    font-weight: lighter;
+    margin-top: 50px;
+
+}
+
+/* Add CSS for the link with the specified color */
+.click-link {
+    color: #C19162;
+}
+
+.Fcont2 {
+    display: flex;
+    align-items: baseline; /* Vertically align items within the container */
+    color: white;
+    font-family: 'Open Sans';
+    font-weight: lighter;
+    margin-top: 50px;
+}
+
+/* Add some spacing between the heading and the link */
+.Fcont2 h2 {
+    margin-right: 10px; /* Adjust the margin as needed */
+}
+
+/* Style the link with the specified color */
+.click-link {
+    color: #C19162;
+    text-decoration: none;
+}
+
+.Fcont3{
+    color: #C19162;
+    margin-top: 90px;
+    margin-left: 200px;
+    font-family: 'Playfair Display';
+    font-weight: 200px;
+    font-size: 20px;
+}
+
+.Fcontainer1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr; /* Define 3 columns with different widths */
+    grid-gap: 20px; /* Add spacing between columns */
+    margin-top: 20px; /* Add spacing between the two sections */
+    margin-left: 25px;
+}
+
+/* Add styles for the button above the footer */
+.button-above-footer {
+    text-align: center; 
+    margin-top: 20px; /* Add some spacing above the button */
+    
+}
+
+.footer-button {
+    background-color: #C19162; /* Set the button's background color */
+    color: #fff; /* Set the text color */
+    padding: 10px 20px; /* Adjust the padding as needed */
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    fill: 60%;
+}

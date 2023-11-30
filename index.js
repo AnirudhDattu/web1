@@ -20,3 +20,33 @@ function validate(event) {
 
 const submitButton = document.querySelector('.login__submit');
 submitButton.addEventListener('click', validate);
+
+var scrollToTopButton = document.getElementById("scrollToTopButton");
+
+// Add a click event listener to the button
+scrollToTopButton.addEventListener("click", function() {
+    // Scroll to the top of the page smoothly
+    window.scrollTo({
+        top: 0, // Change this to 0
+        behavior: "smooth"
+    });
+});
+
+
+// -----------------------------------------------------------------------------------------------------------------
+
+var helpLink = document.getElementById("helpLink");
+
+// Add a click event listener to the help link
+helpLink.addEventListener("click", function(event) {
+    event.preventDefault();
+
+    // Get the top position of the footer
+    var footerTop = document.getElementById("footer").offsetTop;
+
+    // Scroll to the footer position smoothly
+    window.scrollTo({
+        top: footerTop,
+        behavior: "smooth"
+    });
+});
