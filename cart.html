@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE BOOKSHELF</title>
+    <link rel="stylesheet" href="caterogies.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css">
+</head>
+<body>
+    <div class="bgc">
+        <div id="header">
+            <div class="containernav">
+                <div class="titleimage">
+                    <img class="titleimg" src="images\title image.png" alt="title image">
+                </div>
+                <div class="navbar">
+                    <nav>
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>   
+                        <li><a href="explore.html">EXPLORE</a></li>
+                        <li><a href="caterogies.html">CATEGORIES</a></li>
+                        <li><a href="cart.html">CART</a></li>
+                        <li><a href="#">HELP</a></li>
+                    </ul>
+                </nav>
+                </div>
+
+                <div id="cart-container">
+                    <h2>Your Shopping Cart</h2>
+                    <div id="cart-items">
+                        <!-- Cart items will be displayed here -->
+                    </div>
+                </div>
+            
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        // Retrieve cart items from local storage
+                        const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+            
+                        // Function to update the cart display
+                        function updateCartDisplay() {
+                            const cartItemsContainer = document.getElementById("cart-items");
+                            cartItemsContainer.innerHTML = "";
+            
+                            if (cartItems.length === 0) {
+                                cartItemsContainer.innerHTML += "<p>Your cart is empty.</p>";
+                            } else {
+                                cartItems.forEach(item => {
+                                    cartItemsContainer.innerHTML += `<p>${item}</p>`;
+                                });
+                            }
+                        }
+            
+                        // Initial update of cart display
+                        updateCartDisplay();
+            
+                        // You can add additional functionality here if needed
+                    });
+                </script>
+            </div>
+        </div>
+        <hr>
+    </div>
+</body>
+</html>
