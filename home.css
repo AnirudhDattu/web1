@@ -1,3 +1,5 @@
+/* home.css */
+
 body {
     margin: 0px;
 }
@@ -449,4 +451,384 @@ filter: blur(10px);
     cursor: pointer;
     width: 100%;
     fill: 60%;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+    .containernav {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .titleimg {
+        width: 280px;
+    }
+    
+    .navbar {
+        padding-left: 0;
+        padding-top: 10px;
+    }
+    
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .bokshf {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        font-size: 50px;
+        text-align: center;
+    }
+    
+    .para1 {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        text-align: center;
+    }
+    
+    .para1l {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .expbtn {
+        left: 50%;
+        transform: translateX(-50%);
+        margin-left: 0;
+        width: 90%;
+        max-width: 313px;
+    }
+    
+    .readerspic {
+        width: 100%;
+        height: auto;
+    }
+    
+    .genr {
+        margin-left: 30%;
+        font-size: 40px;
+    }
+    
+    .container2 {
+        grid-template-columns: 1fr;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .box {
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+    .a1 {
+        margin-left: 50px;
+        font-size: 25px;
+    }
+    
+    .a2, .a4, .a5 {
+        margin-left: 50px;
+    }
+    
+    .Fbook {
+        margin-left: 20%;
+        width: 60%;
+        height: auto;
+    }
+    
+    .container3 {
+        margin-left: 50px;
+    }
+    
+    .engm {
+        width: 90%;
+    }
+    
+    .img2 {
+        width: 100%;
+        height: auto;
+    }
+    
+    .Fcontainer {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .Fcontainer1 {
+        grid-template-columns: 1fr 1fr;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .containernav {
+        padding: 10px;
+    }
+    
+    .titleimg {
+        width: 220px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    nav ul li {
+        margin: 5px 0;
+    }
+    
+    nav ul li a {
+        font-size: 16px;
+    }
+    
+    .container {
+        grid-template-columns: 1fr;
+        margin: 10px;
+    }
+    
+    .bokshf {
+        position: relative;
+        left: auto;
+        top: 50px;
+        transform: none;
+        width: 100%;
+        font-size: 35px;
+        text-align: center;
+        margin: 20px 0;
+    }
+    
+    .para1 {
+        position: relative;
+        left: auto;
+        top: auto;
+        transform: none;
+        width: 100%;
+        text-align: center;
+        margin: 20px 0;
+        font-size: 18px;
+        padding: 0 20px;
+    }
+    
+    .para1l {
+        position: relative;
+        left: auto;
+        top: auto;
+        transform: none;
+        width: 80%;
+        margin: 20px auto;
+    }
+    
+    .expbtn {
+        position: relative;
+        left: auto;
+        top: auto;
+        transform: none;
+        margin: 30px auto;
+        width: 90%;
+        max-width: 280px;
+        display: block;
+        font-size: 18px;
+        height: 50px;
+    }
+    
+    .end2 {
+        margin-top: 50px;
+    }
+    
+    .readerspic {
+        width: 100%;
+        height: auto;
+    }
+    
+    .genr {
+        margin-left: 0;
+        text-align: center;
+        font-size: 30px;
+        width: 100%;
+        padding: 0 20px;
+    }
+    
+    .rectangle {
+        margin-top: 100px;
+        width: 100%;
+        height: 250px;
+    }
+    
+    .bookimg {
+        width: 180px;
+        height: 280px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 120px;
+    }
+    
+    .booktype {
+        left: 20px;
+        top: 80px;
+        font-size: 28px;
+    }
+    
+    .container2 {
+        grid-template-columns: 1fr;
+        margin: 20px 10px;
+    }
+    
+    .box {
+        width: 100%;
+        margin-left: 0;
+        height: auto;
+        padding: 20px 0;
+    }
+    
+    .a1 {
+        margin-left: 20px;
+        font-size: 20px;
+        width: 90%;
+    }
+    
+    .a2 {
+        margin-left: 20px;
+        font-size: 18px;
+    }
+    
+    .a4 {
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    
+    .a5 {
+        margin-left: 20px;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    
+    .Fbook {
+        margin: 20px auto;
+        width: 80%;
+        max-width: 250px;
+        height: auto;
+    }
+    
+    .container3 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .engm {
+        width: 100%;
+        font-size: 16px;
+    }
+    
+    .button-container2 {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .img2 {
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .Fcontainer {
+        grid-template-columns: 1fr;
+        margin: 10px;
+        gap: 30px;
+    }
+    
+    .Fcontainer1 {
+        grid-template-columns: 1fr;
+        margin: 10px;
+        gap: 20px;
+    }
+    
+    .Fcont1, .Fcont2, .Fcont3 {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    
+    .Fcont3 {
+        text-align: center;
+        margin-left: 0;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .titleimg {
+        width: 180px;
+    }
+    
+    nav ul li a {
+        font-size: 14px;
+    }
+    
+    .bokshf {
+        font-size: 28px;
+    }
+    
+    .para1 {
+        font-size: 16px;
+    }
+    
+    .expbtn {
+        font-size: 16px;
+        height: 45px;
+    }
+    
+    .genr {
+        font-size: 25px;
+    }
+    
+    .rectangle {
+        height: 200px;
+    }
+    
+    .bookimg {
+        width: 140px;
+        height: 220px;
+        margin-top: 100px;
+    }
+    
+    .booktype {
+        font-size: 22px;
+        top: 60px;
+    }
+    
+    .a1 {
+        font-size: 18px;
+    }
+    
+    .a2 {
+        font-size: 16px;
+    }
+    
+    .a5 {
+        font-size: 12px;
+    }
+    
+    .Fbook {
+        max-width: 200px;
+    }
+    
+    .engm {
+        font-size: 14px;
+    }
+    
+    .button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+    
+    .Fcont3 {
+        font-size: 16px;
+    }
 }

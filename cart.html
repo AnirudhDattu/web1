@@ -1,66 +1,190 @@
+<!-- Cart.html -->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THE BOOKSHELF</title>
-    <link rel="stylesheet" href="caterogies.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Cart - THE BOOKSHELF</title>
+
+    <!-- fonts (Playfair + Open Sans) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="responsive-global.css">
+    <link rel="stylesheet" href="cart.css">
 </head>
+
 <body>
     <div class="bgc">
+        <!-- NAV -->
         <div id="header">
             <div class="containernav">
                 <div class="titleimage">
-                    <img class="titleimg" src="images\title image.png" alt="title image">
+                    <img class="titleimg" src="images/title image.png" alt="THE BOOKSHELF">
                 </div>
                 <div class="navbar">
                     <nav>
-                    <ul>
-                        <li><a href="home.html">HOME</a></li>   
-                        <li><a href="explore.html">EXPLORE</a></li>
-                        <li><a href="caterogies.html">CATEGORIES</a></li>
-                        <li><a href="cart.html">CART</a></li>
-                        <li><a href="#">HELP</a></li>
-                    </ul>
-                </nav>
+                        <ul>
+                            <li><a href="home.html">HOME</a></li>
+                            <li><a href="explore.html">EXPLORE</a></li>
+                            <li><a href="caterogies.html">CATEGORIES</a></li>
+                            <li><a href="cart.html" class="active">CART</a></li>
+                            <li><a href="#">HELP</a></li>
+                        </ul>
+                    </nav>
                 </div>
-
-                <div id="cart-container">
-                    <h2>Your Shopping Cart</h2>
-                    <div id="cart-items">
-                        <!-- Cart items will be displayed here -->
-                    </div>
-                </div>
-            
-                <script>
-                    document.addEventListener("DOMContentLoaded", function() {
-                        // Retrieve cart items from local storage
-                        const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
-            
-                        // Function to update the cart display
-                        function updateCartDisplay() {
-                            const cartItemsContainer = document.getElementById("cart-items");
-                            cartItemsContainer.innerHTML = "";
-            
-                            if (cartItems.length === 0) {
-                                cartItemsContainer.innerHTML += "<p>Your cart is empty.</p>";
-                            } else {
-                                cartItems.forEach(item => {
-                                    cartItemsContainer.innerHTML += `<p>${item}</p>`;
-                                });
-                            }
-                        }
-            
-                        // Initial update of cart display
-                        updateCartDisplay();
-            
-                        // You can add additional functionality here if needed
-                    });
-                </script>
             </div>
         </div>
         <hr>
+
+        <!-- Page heading -->
+        <header class="cart-heading">
+            <h1 class="cart-title">SHOPPING CART</h1>
+            <p class="cart-subtitle">Hello Bookworm!! Ready to fill up your bookshelf?</p>
+        </header>
+
+        <!-- Big bordered container -->
+        <main class="cart-wrapper">
+            <!-- single cart item row -->
+            <section class="cart-item">
+                <div class="ci-image">
+                    <img class="book-img" src="images/book2.jpg" alt="book cover">
+                </div>
+
+                <div class="ci-details">
+                    <div class="book-tags">
+                        <span class="badge">New York time’s Bestseller</span>
+                        <span class="rating">4.7</span>
+                    </div>
+
+                    <h2 class="book-title">November 9</h2>
+                    <p class="book-author">by Colleen Hoover</p>
+                    <p class="book-format">Paperback</p>
+                    <p class="in-stock">In stock</p>
+                </div>
+
+                <div class="ci-actions">
+                    <div class="qty-wrap">
+                        <button class="qty-btn">−</button>
+                        <span class="qty-count">1</span>
+                        <button class="qty-btn">+</button>
+                    </div>
+
+                    <div class="price-wrap">
+                        <span class="price">220.00 Rs</span>
+                        <span class="old-price">499.00 Rs</span>
+                    </div>
+
+                    <div class="action-icons">
+                        <button class="icon-like">♡</button>
+                        <button class="icon-remove">✕</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- progress + continue shopping -->
+            <section class="progress-section">
+                <div class="progress-left">
+                    <div class="progress-caption">
+                        <span class="youre">You’re almost getting there</span>
+                        <span class="more">Add items worth <strong>279.00 Rs more</strong> and get free
+                            shipping!!!</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width:28%"></div>
+                    </div>
+                </div>
+
+                <div class="progress-cta">
+                    <button class="continue-btn">← Continue Shopping</button>
+                </div>
+            </section>
+
+            <!-- bottom: comment & summary -->
+            <section class="bottom-section">
+                <div class="comment-box">
+                    <label class="comment-label">Leave a comment</label>
+                    <textarea placeholder="Any delivery instructions, special requests, etc..."></textarea>
+                </div>
+
+                <aside class="summary-box">
+                    <div class="summary-row">
+                        <span class="summary-label">Subtotal (1 ITEM)</span>
+                        <span class="summary-amount">220.00 Rs</span>
+                    </div>
+
+                    <p class="summary-note">○ Delivery charges will be applicable at the checkout</p>
+
+                    <label class="gift-row">
+                        <input type="checkbox" /> This order is a gift
+                    </label>
+
+                    <button class="checkout-btn">Proceed to checkout</button>
+                </aside>
+            </section>
+
+            <!-- clear cart button placed at bottom-left inside border -->
+            <div class="clear-cart">
+                <button class="clear-btn"><span class="clear-icon">✕</span> Clear Shopping Cart</button>
+            </div>
+
+        </main>
+        <div class="footer"> <!--footer -->
+            <div class="button-above-footer">
+                <button class="footer-button" herf="#" id="scrollToTopButton">Back To The Top</button>
+            </div>
+            <div class="Fcontainer">
+                <div class="Fcont1">
+                    <h3>Get To Know Us</h3>
+                    <p>about us</p>
+                    <p>carrers</p>
+                    <p>Our Story</p>
+                    <p>FAQ's</p>
+                </div>
+                <div class="Fcont1">
+                    <h3>Connect With Us</h3>
+                    <p>Facebook</p>
+                    <p>Instagram</p>
+                    <p>Twitter</p>
+                    <p>Blog</p>
+                </div>
+                <div class="Fcont1">
+                    <h3>Contact Us</h3>
+                    <p>Mail: help@bookshelf.com</p>
+                    <p>Toll Free: 1800-23569875</p>
+                </div>
+                <div class="Fcont1">
+                    <h3>Policies</h3>
+                    <p>Terms Of Services</p>
+                    <p>Privacy Policy</p>
+                    <p>Shipping & Return</p>
+                    <p>Customer Service</p>
+                </div>
+            </div>
+            <div class="Fcontainer1">
+                <div class="Fcont1">
+                    <h3>Quick Links</h3>
+                    <p>Fiction</p>
+                    <p>Non-Fiction</p>
+                    <p>Combos</p>
+                    <p>Series</p>
+                    <p>Bestsellers</p>
+                </div>
+                <div class="Fcont2">
+                    <h2>Give Feedback?</h2>
+                    <a href="#" class="click-link">Click Here</a>
+                </div>
+                <div class="Fcont3">
+                    <h1>THE BOOKSHELF</h2>
+                </div>
+            </div>
+
+        </div>
     </div>
 </body>
+
 </html>

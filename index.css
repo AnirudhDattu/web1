@@ -1,3 +1,5 @@
+/* index.css */
+
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
 
 * {
@@ -175,4 +177,122 @@ body {
 
 .social-login__icon:hover {
 	transform: scale(1.5);	
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+	.screen {
+		width: 90%;
+		max-width: 320px;
+		height: auto;
+		min-height: 500px;
+	}
+	
+	.login {
+		width: 90%;
+		padding: 20px;
+		padding-top: 100px;
+	}
+	
+	.login__input {
+		width: 100%;
+		font-size: 16px;
+	}
+	
+	.login__submit {
+		font-size: 16px;
+		padding: 14px 16px;
+	}
+	
+	.screen__background__shape1 {
+		height: 400px;
+		width: 400px;
+		top: -30px;
+		right: 80px;
+	}
+	
+	.screen__background__shape2 {
+		height: 180px;
+		width: 180px;
+		top: -120px;
+	}
+	
+	.screen__background__shape3 {
+		height: 400px;
+		width: 150px;
+		top: -10px;
+	}
+	
+	.screen__background__shape4 {
+		height: 300px;
+		width: 150px;
+		top: 320px;
+		right: 30px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.container {
+		padding: 10px;
+	}
+	
+	.screen {
+		width: 95%;
+		max-width: 280px;
+		height: auto;
+		min-height: 450px;
+	}
+	
+	.login {
+		width: 100%;
+		padding: 15px;
+		padding-top: 80px;
+	}
+	
+	.login__field {
+		padding: 15px 0px;
+	}
+	
+	.login__input {
+		width: 100%;
+		font-size: 14px;
+		padding: 8px;
+		padding-left: 20px;
+	}
+	
+	.login__submit {
+		font-size: 14px;
+		padding: 12px 14px;
+		margin-top: 20px;
+	}
+	
+	.button__icon {
+		font-size: 20px;
+	}
+	
+	.screen__background__shape1 {
+		height: 300px;
+		width: 300px;
+		top: -20px;
+		right: 50px;
+	}
+	
+	.screen__background__shape2 {
+		height: 140px;
+		width: 140px;
+		top: -80px;
+	}
+	
+	.screen__background__shape3 {
+		height: 300px;
+		width: 120px;
+		top: 0px;
+	}
+	
+	.screen__background__shape4 {
+		height: 200px;
+		width: 120px;
+		top: 250px;
+		right: 20px;
+	}
 }

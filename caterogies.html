@@ -1,5 +1,8 @@
+<!-- caterogies.html -->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +10,7 @@
     <link rel="stylesheet" href="caterogies.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css">
 </head>
+
 <body>
     <div class="bgc">
         <div id="header">
@@ -16,14 +20,14 @@
                 </div>
                 <div class="navbar">
                     <nav>
-                    <ul>
-                        <li><a href="home.html">HOME</a></li>   
-                        <li><a href="explore.html">EXPLORE</a></li>
-                        <li><a href="caterogies.html">CATEGORIES</a></li>
-                        <li><a href="cart.html">CART</a></li>
-                        <li><a href="#">HELP</a></li>
-                    </ul>
-                </nav>
+                        <ul>
+                            <li><a href="home.html">HOME</a></li>
+                            <li><a href="explore.html">EXPLORE</a></li>
+                            <li><a href="caterogies.html">CATEGORIES</a></li>
+                            <li><a href="cart.html">CART</a></li>
+                            <li><a href="#">HELP</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>
@@ -53,37 +57,37 @@
                 <img class="img3" src="all-images\Catalog\Love On The Brain.jpg">
                 <img class="book3" src="all-images\Catalog\book3.png">
                 <img class="heart3" src="all-images\Catalog\heart.png"><!-- heart for the 3rd column */ -->
-                <button class="buy-button buy-button3">Buy now</button>           <!--button for the 3rd column */ -->
+                <button class="buy-button buy-button3">Buy now</button> <!--button for the 3rd column */ -->
                 <img class="img4" src="all-images\Catalog\November 9.jpg">
-                <img class="book4" src="all-images\Catalog\book4.png"> 
+                <img class="book4" src="all-images\Catalog\book4.png">
                 <img class="heart4" src="all-images\Catalog\heart.png"><!--heart for 2nd row 1st column */-->
-                <button class="buy-button buy-button4">Buy now</button>           <!-- button for 2nd row 1st column */-->
+                <button class="buy-button buy-button4">Buy now</button> <!-- button for 2nd row 1st column */-->
                 <img class="img5" src="all-images\Catalog\Meant To Be.jpg">
                 <img class="book5" src="all-images\Catalog\book5.png">
                 <img class="heart5" src="all-images\Catalog\heart.png"><!--heart for 2nd row 2nd column-->
-                <button class="buy-button buy-button5">Buy now</button>           <!--button for 2nd row 2nd column-->
+                <button class="buy-button buy-button5">Buy now</button> <!--button for 2nd row 2nd column-->
                 <img class="img6" src="all-images\Catalog\The Seeven Husbands of Evelyn Hugo.jpg">
                 <img class="book6" src="all-images\Catalog\book6.png">
                 <img class="heart6" src="all-images\Catalog\heart.png"><!--heart for 2nd row 3rd column-->
-                <button class="buy-button buy-button6">Buy now</button>           <!--button for 2nd row 3rd column-->
+                <button class="buy-button buy-button6">Buy now</button> <!--button for 2nd row 3rd column-->
                 <img class="img7" src="all-images\Catalog\My Fault.jpg">
                 <img class="book7" src="all-images\Catalog\book7.png">
                 <img class="heart7" src="all-images\Catalog\heart.png"><!--heart for 3rd row 1rd column-->
-                <button class="buy-button buy-button7">Buy now</button>           <!--button for 3rd row 1st column-->
+                <button class="buy-button buy-button7">Buy now</button> <!--button for 3rd row 1st column-->
                 <img class="img8" src="all-images\Catalog\The Summer I Turned Pretty.jpg">
                 <img class="book8" src="all-images\Catalog\book8.png">
                 <img class="heart8" src="all-images\Catalog\heart.png"><!--heart for 3rd row 2nd column-->
-                <button class="buy-button buy-button8">Buy now</button>           <!--button for 3rd row 2nd column-->
+                <button class="buy-button buy-button8">Buy now</button> <!--button for 3rd row 2nd column-->
                 <img class="img9" src="all-images\Catalog\Book Lovers.jpg">
                 <img class="book9" src="all-images\Catalog\book9.png">
                 <img class="heart9" src="all-images\Catalog\heart.png"><!--heart for 3rd row 3rd column-->
-                <button class="buy-button buy-button9">Buy now</button>           <!--button for 3rd row 3rd column-->
+                <button class="buy-button buy-button9">Buy now</button> <!--button for 3rd row 3rd column-->
                 <img class="slb" src="images\slab.png">
                 <img class="slb2" src="images\slab.png">
                 <img class="slb3" src="images\slab.png">
             </div>
             <script>
-                document.addEventListener("DOMContentLoaded", function() {
+                document.addEventListener("DOMContentLoaded", function () {
                     const buyButtons = document.querySelectorAll(".buy-button");
                     const buyButton = Array.from(buyButtons);
                     console.log(buyButton);
@@ -91,39 +95,39 @@
                         const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
                         cartItems.push(bookTitle);
                         localStorage.setItem("cartItems", JSON.stringify(cartItems));
-                        console.log(`Added to cart: ${bookTitle}`);
+                        console.log(Added to cart: ${ bookTitle });
                     }
-            
+
                     buyButton.forEach((button, index) => {
-                        button.addEventListener("click", function() {
+                        button.addEventListener("click", function () {
                             console.log("hi");
-                            const bookTitle = document.querySelector(`.img${index+1}`).src.split("/");
-                            console.log(bookTitle);
-                            addToCart(window.decodeURIComponent([bookTitle.length-1].split(".")[0]));
-                            updateCartDisplay();  // Optional: If you want to update the display immediately
-                        });
+                            const bookTitle = document.querySelector(.img${ index+ 1}).src.split("/");
+                        console.log(bookTitle);
+                        addToCart(window.decodeURIComponent([bookTitle.length - 1].split(".")[0]));
+                        updateCartDisplay();  // Optional: If you want to update the display immediately
                     });
-            
-                    function updateCartDisplay() {
-                        // Optional: If you want to update the display immediately
-                        const cartItemsContainer = document.getElementById("cart-items");
-                        cartItemsContainer.innerHTML = "";
-                        const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
-                        if (cartItems.length === 0) {
-                            cartItemsContainer.innerHTML += "<p>Your cart is empty.</p>";
-                        } else {
-                            cartItems.forEach(item => {
-                                cartItemsContainer.innerHTML += `<p>${item}</p>`;
-                            });
-                        }
+                });
+
+                function updateCartDisplay() {
+                    // Optional: If you want to update the display immediately
+                    const cartItemsContainer = document.getElementById("cart-items");
+                    cartItemsContainer.innerHTML = "";
+                    const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+                    if (cartItems.length === 0) {
+                        cartItemsContainer.innerHTML += "<p>Your cart is empty.</p>";
+                    } else {
+                        cartItems.forEach(item => {
+                            cartItemsContainer.innerHTML += <p>${item}</p>;
+                        });
                     }
+                }
                 });
             </script>
-            
+
         </div>
-        <div class="footer">  <!--footer -->
+        <div class="footer"> <!--footer -->
             <div class="button-above-footer">
-                <button class="footer-button"  herf="#" id="scrollToTopButton">Back To The Top</button>
+                <button class="footer-button" herf="#" id="scrollToTopButton">Back To The Top</button>
             </div>
             <div class="Fcontainer">
                 <div class="Fcont1">
@@ -170,10 +174,11 @@
                     <h1>THE BOOKSHELF</h2>
                 </div>
             </div>
-    
+
         </div>
-        
-       </div>
+
+    </div>
     </div>
 </body>
+
 </html>
